@@ -3,12 +3,19 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import { HttpClientModule } from '@angular/common/http'
+import { ListapeliculasComponent } from './components/listapeliculas/listapeliculas.component';
+import { SelectpeliculasComponent } from './components/selectpeliculas/selectpeliculas.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListapeliculasComponent,
+    SelectpeliculasComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

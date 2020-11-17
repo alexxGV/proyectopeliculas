@@ -1,0 +1,9 @@
+<div *ngIf="generos.length >0">
+    <select (change)="onChange($event)">
+        <ng-container *ngFor="let genero of generos">
+            <option value="{{genero.id}}">
+                {{genero.nombreGenero}}
+            </option>
+        </ng-container>
+    </select>
+</div>
